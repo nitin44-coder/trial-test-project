@@ -23,6 +23,12 @@ public String saveEmployee(@RequestBody Employee emp) {
 	return "Employee saved successfully";
 	}
 
+@RequestMapping("/student1")
+public String getStudent1() 
+{
+	return "Welcome  Spring Boot Studewnts!";
+}
+
 @RequestMapping("/all")
 public Iterable<Employee> getAllEmployees() {
 	return erepo.findAll();}
